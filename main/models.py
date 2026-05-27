@@ -30,7 +30,7 @@ class Product(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.name, self.color, self.price
+        return self.name
     
 class Size(models.Model):
     name = models.CharField(max_length=20)
